@@ -29,7 +29,10 @@ All letters will be upper case. */
 void compute_nucleotide_occurrences(DNA_sequence *dna_seq) {
     /* TODO: implement compute_nucleotide_occurances */
     char * p = dna_seq->sequence;
-    
+    dna_seq->A_count = 0;
+    dna_seq->G_count = 0;
+    dna_seq->C_count = 0;
+    dna_seq->T_count = 0;
     while(*p != '\0'){
         if(*p == 'A'){
             dna_seq->A_count++;
